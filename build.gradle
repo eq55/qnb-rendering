@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+group = 'com.lv.tica'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	testCompile 'junit:junit:4.8.2'
+	testCompile 'xmlunit:xmlunit:1.1'
+}
