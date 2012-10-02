@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'eclipse'
+apply plugin: 'eclipse-wtp'
 apply plugin: 'jetty'
 
 group = 'com.lv.tica'
@@ -15,6 +16,8 @@ dependencies {
 	compile "org.springframework:spring-web:$springVersion"
 	compile "org.springframework:spring-webmvc:$springVersion"
 	compile "org.springframework:spring-context-support:$springVersion"
+	compile "javax.servlet:jstl:$JstlVersion"
+	compile "javax.servlet:servlet-api:$Servletversion"
 	testCompile 'junit:junit:4.8.2'
 	testCompile 'xmlunit:xmlunit:1.1'
 }
